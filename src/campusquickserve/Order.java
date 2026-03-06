@@ -45,22 +45,20 @@ public void calculateTotlas(){
 }
 
 //creating the reciept
-public String receipt(){
-    double vatAmount = calculateVAT();
-    double totalAmount = Total();
-
-return "-----------QuickServe Receipt-----------\n" +
+public String getReiceipt(){
+    return "-----------QuickServe Receipt-----------\n" +
         "Customer Name:" + CustomerName + "\n" +
         "Student Name:" + StudentNumber + "\n" +
-        "Item Ordered:" + ItemName + "\n" +
-        "Price: R" + baseprice + "\n" +
+        
+        "Item Ordered:" + ItemName + "\n" +    
+        "Quantity:" + quantity + "\n" +
+        "Price per item: R" + pricePerItem + "\n" + 
+        
+        "Subtotal: R" + subtotal + "\n" +  
         "VAT (15%):" + vatAmount + "\n" +
-        "Total: R" + totalAmount + "\n" + "----------------------------------------";
+           
+        "Total: R" + finaltotal + "\n" +    
+        "----------------------------------------";
 
-
-}
-
-    String getReceipt() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
