@@ -3,7 +3,7 @@ package campusquickserve;
 import java.util.Scanner;
 
 public class Order {
-  //creating the fields  
+//creating the fields  
  
     //customer details
  private String CustomerName;
@@ -23,7 +23,7 @@ public class Order {
  private final double VATrate = 0.15;
  
  //making the constructor
-public Order(String name, String studentNumber, String item, double price, int qty){
+public Order(String name, String studentNumber, String item, int qty, double price){
     this.CustomerName = name;
     this.StudentNumber = studentNumber;
     this.ItemName = item;
